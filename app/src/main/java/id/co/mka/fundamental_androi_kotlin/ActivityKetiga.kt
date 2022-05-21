@@ -1,13 +1,13 @@
 package id.co.mka.fundamental_androi_kotlin
 
-import android.content.Intent
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import id.co.mka.fundamental_androi_kotlin.databinding.ActivityKetigaBinding
 
 class ActivityKetiga : AppCompatActivity() {
 
-    // Activasi View Binding
+    // Activasi View Binding Activity ketiga
     private lateinit var bindingKetiga : ActivityKetigaBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
