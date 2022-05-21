@@ -7,7 +7,7 @@ import id.co.mka.fundamental_androi_kotlin.databinding.ActivityKetigaBinding
 
 class ActivityKetiga : AppCompatActivity() {
 
-    // Activasi View Binding Activity ketiga
+    // Activasi View Binding Activity Ketiga
     private lateinit var bindingKetiga : ActivityKetigaBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +15,7 @@ class ActivityKetiga : AppCompatActivity() {
         bindingKetiga = ActivityKetigaBinding.inflate(layoutInflater)
         setContentView(bindingKetiga.root)
 
-        // Mengambil Data Dari Activity Kedua
+        // Mengambil Data dan Pesan Dari Activsity Kedua
         with(bindingKetiga){
             val ambilNama = intent.getStringExtra("EXTRA_NAME") // Context Name Harus Sama
             val ambilHobi = intent.getStringExtra("Extra Hobi")

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+   <item
+       android:id="@+id/tb_setting"
+       android:title="Setting"
+       android:icon="@drawable/ic_setting"
+       app:showAsAction="ifRoom"/>
+   <item
+       android:id="@+id/tb_getContact"
+       android:title="AddContact"
+       android:icon="@drawable/ic_addcontact"
+       app:showAsAction="always"/>
+   <item
+       android:id="@+id/tb_vavorit"
+       android:title="Favorit"
+       android:icon="@drawable/ic_favorit"
+       app:showAsAction="always"/>
+   <item
+       android:id="@+id/tb_feedback"
+       android:title="Give Feedback"
+       android:icon="@drawable/ic_setting"
+       app:showAsAction="never"/>
+   <item
+       android:id="@+id/tb_exit"
+       android:title="Keluar"
+       android:icon="@drawable/ic_setting"
+       app:showAsAction="never"/>
+</menu>
