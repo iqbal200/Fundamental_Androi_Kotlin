@@ -1,5 +1,6 @@
 package id.co.mka.fundamental_androi_kotlin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -18,6 +19,7 @@ class ActivitiKeempat : AppCompatActivity() {
 
         with(bindingkeempat){
 
+
         }
     }
 
@@ -30,7 +32,10 @@ class ActivitiKeempat : AppCompatActivity() {
     // Membuat Fungsi Menu Aktif berdasarkan Klik
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
-            R.id.tb_setting -> Toast.makeText(this, "Anda Mengklik Setting", Toast.LENGTH_LONG ).show()
+            // Memindahkan menu setting ke Activity Ketiga
+            R.id.tb_setting -> Intent(this,ActivityKetiga::class.java).also {
+                startActivity(it)
+            }
             R.id.tb_feedback -> Toast.makeText(this, "Anda Memberikan Feedback", Toast.LENGTH_LONG ).show()
             R.id.tb_vavorit -> Toast.makeText(this, "Anda Memilih Favorit", Toast.LENGTH_LONG ).show()
             R.id.tb_getContact -> Toast.makeText(this, "Anda Mendapatkan Kontak", Toast.LENGTH_LONG ).show()
