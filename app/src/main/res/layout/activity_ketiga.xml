@@ -20,5 +20,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/btn_keempat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lanjut Keempat"
+        app:layout_constraintBottom_toTopOf="@+id/tv_activity_ketiga"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.704"
+        tools:layout_editor_absoluteX="0dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
