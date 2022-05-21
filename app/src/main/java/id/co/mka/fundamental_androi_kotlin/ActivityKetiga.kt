@@ -7,7 +7,7 @@ import id.co.mka.fundamental_androi_kotlin.databinding.ActivityKetigaBinding
 
 class ActivityKetiga : AppCompatActivity() {
 
-    // Activasi View Binding Activity ketiga
+    // Activasi View Binding Activity Ketiga
     private lateinit var bindingKetiga : ActivityKetigaBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
