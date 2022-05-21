@@ -15,7 +15,7 @@ class ActivityKetiga : AppCompatActivity() {
         bindingKetiga = ActivityKetigaBinding.inflate(layoutInflater)
         setContentView(bindingKetiga.root)
 
-        // Mengambil Data dan Pesan Dari Activity Kedua
+        // Mengambil Data dan Pesan Dari Activsity Kedua
         with(bindingKetiga){
             val ambilNama = intent.getStringExtra("EXTRA_NAME") // Context Name Harus Sama
             val ambilHobi = intent.getStringExtra("Extra Hobi")
