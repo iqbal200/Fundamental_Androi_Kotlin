@@ -6,13 +6,9 @@
     android:background="@color/purple_500"
     tools:context=".fragment.fragment_pertama">
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/fragment_pertama"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:textColor="@color/black"
-        android:text="@string/hello_blank_fragment" />
+
+
+
+
 
 </FrameLayout>

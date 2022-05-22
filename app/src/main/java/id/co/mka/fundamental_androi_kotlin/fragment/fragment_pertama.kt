@@ -9,4 +9,5 @@ import id.co.mka.fundamental_androi_kotlin.R
 
  class fragment_pertama : Fragment(R.layout.fragment_pertama) {
 
+
 }

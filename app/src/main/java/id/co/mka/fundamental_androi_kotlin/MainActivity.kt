@@ -1,5 +1,6 @@
 package id.co.mka.fundamental_androi_kotlin
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -19,9 +20,38 @@ class MainActivity : AppCompatActivity() {
         setContentView(inibinding.root)
 
 
-        // Cara Berpindah Activity Menggunak
+
+
         with(inibinding){
 
+            // Share Preference
+            val sharePref = getSharedPreferences("myPref", Context.MODE_PRIVATE)
+            val editor = sharePref.edit()
+            btnSave.setOnClickListener {
+                val name = tvfNama.text.toString()
+                val umur = tvfUmur.text.toString().toInt()
+                val checked = RbAdult.isChecked
+
+                editor.apply {
+                    putString("name", name)
+                    putInt( "umur", umur)
+                    putBoolean("checked", checked)
+                    apply()
+                }
+                Log.d("MainActivity", "$name, $umur, Status $checked")
+            }
+
+            // Button Load SharePreference
+            btnLoad.setOnClickListener {
+                val name = sharePref.getString("name", null)
+                val umur = sharePref.getInt("umur", 0)
+                val checked = sharePref.getBoolean("checked", false)
+
+                tvfNama.setText(name)
+                tvfUmur.setText(umur.toString())
+                RbAdult.isChecked = checked
+            }
+            // Cara Berpindah Activity Menggunakan
             btnPindahActivity.setOnClickListener {
                     Intent(this@MainActivity, ActivityKedua::class.java).also {
                         startActivity(it)
@@ -51,6 +81,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
 
 
 }

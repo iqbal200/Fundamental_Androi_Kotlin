@@ -90,5 +90,68 @@
         android:backgroundTint="@color/purple_700"
         android:layout_height="wrap_content"
         android:text="Pindah Activity"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/fragment_pertama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:textColor="@color/black"
+            android:text="Share Preference" />
+        <EditText
+            android:id="@+id/tvf_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="Nama"
+
+            android:paddingStart="12dp"
+            android:layout_marginStart="50dp"
+            />
+        <EditText
+            android:id="@+id/tvf_umur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="12dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="50dp"
+            android:hint="Umur"/>
+        <RadioButton
+            android:id="@+id/Rb_adult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:textColor="@color/white"
+            android:text="Adult?"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_load"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/purple_200"
+                android:text="Load"/>
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/purple_700"
+                android:text="Save"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 </LinearLayout>

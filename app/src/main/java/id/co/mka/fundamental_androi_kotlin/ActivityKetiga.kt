@@ -1,6 +1,7 @@
 package id.co.mka.fundamental_androi_kotlin
 
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -18,9 +19,9 @@ class ActivityKetiga : AppCompatActivity() {
         bindingKetiga = ActivityKetigaBinding.inflate(layoutInflater)
         setContentView(bindingKetiga.root)
 
-
         // Mengambil Data dan Pesan Dari Activity Kedua
         with(bindingKetiga){
+
             // Memanggil Fungsi Fragment
             callFragment()
             val ambilNama = intent.getStringExtra("EXTRA_NAME") // Context Name Harus Sama
