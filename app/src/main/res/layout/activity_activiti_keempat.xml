@@ -8,34 +8,26 @@
     android:orientation="vertical"
     tools:context=".ActivitiKeempat">
 
-    <Button
-        android:id="@+id/button_Dialog1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button Dialog 1"
-        android:textStyle="bold"
-        android:layout_margin="12dp"/>
-    <Button
-        android:id="@+id/button_Dialog2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button Dialog 2"
-        android:textStyle="bold"
-        android:layout_margin="12dp"/>
-    <Button
-        android:id="@+id/button_Dialog3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button Dialog 3"
-        android:textStyle="bold"
-        android:layout_margin="12dp"/>
-    <Button
-        android:id="@+id/button_Dialog4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button Dialog 4"
-        android:textStyle="bold"
-        android:layout_margin="12dp"/>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_Dialog1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button Dialog 1"
+            android:textStyle="bold"
+            android:layout_margin="12dp"/>
+        <Button
+            android:id="@+id/button_Dialog2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button Dialog 2"
+            android:textStyle="bold"
+            android:layout_margin="12dp"/>
+    </LinearLayout>
 
     // Buttom Spinner in android Studio
     <Spinner

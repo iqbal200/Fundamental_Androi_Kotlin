@@ -35,16 +35,6 @@ class ActivitiKeempat : AppCompatActivity() {
             buttonDialog2.setOnClickListener {
                 singleChoiseDialog()
             }
-            // Memanggil Fungtion
-            buttonDialog3.setOnClickListener {
-
-            }
-            // Memanggil Fungtion
-            buttonDialog4.setOnClickListener {
-
-            }
-
-
 
         }
 

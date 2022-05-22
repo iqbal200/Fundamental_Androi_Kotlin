@@ -5,13 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_margin="15dp"
     tools:context=".MainActivity">
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="Silahkan Isi data anda"/>
    <LinearLayout
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-
        android:orientation="horizontal">
+
        <EditText
            android:id="@+id/et_nama_awal"
            android:layout_width="wrap_content"
@@ -45,19 +52,34 @@
             android:id="@+id/btn_apply"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_200"
             android:layout_weight="1"
             android:text="Tombol"/>
 
 
 
     </LinearLayout>
+
     <TextView
-        android:id="@+id/tv_menghitung"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Jumlah"/>
+        android:textStyle="bold"
+        android:layout_marginTop="13dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="Menghitung : "/>
+    <TextView
+        android:id="@+id/tv_menghitung"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/purple_700"
+        android:textSize="16dp"
+        android:layout_height="wrap_content"
+        android:text="Jumlah :"/>
     <Button
         android:id="@+id/btn_hitung"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Hitung"/>
@@ -65,6 +87,7 @@
     <Button
         android:id="@+id/btn_pindah_activity"
         android:layout_width="match_parent"
+        android:backgroundTint="@color/purple_700"
         android:layout_height="wrap_content"
         android:text="Pindah Activity"/>
 
