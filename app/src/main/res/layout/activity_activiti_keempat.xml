@@ -37,6 +37,16 @@
         android:textStyle="bold"
         android:layout_margin="12dp"/>
 
+    // Buttom Spinner in android Studio
+    <Spinner
+        android:id="@+id/action_bar_spinner"
+        android:layout_width="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/methodPayment"
+        android:layout_gravity="center">
+
+    </Spinner>
 
 
 

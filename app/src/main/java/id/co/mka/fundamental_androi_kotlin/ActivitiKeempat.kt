@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.widget.AdapterView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.core.graphics.toColor
@@ -41,6 +43,22 @@ class ActivitiKeempat : AppCompatActivity() {
             }
 
 
+        }
+
+        with(bindingkeempat){
+            // Membuat Function Untuk Spinner
+            actionBarSpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
+                override fun onItemSelected(adapterView: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                        Toast.makeText(this@ActivitiKeempat,
+                            "Kamu Memilih ${adapterView?.getItemAtPosition(position).toString()}",
+                            Toast.LENGTH_LONG).show()
+
+                }
+
+                override fun onNothingSelected(p0: AdapterView<*>?) {
+
+                }
+            }
         }
     }
 
