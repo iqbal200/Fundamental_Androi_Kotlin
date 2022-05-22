@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Fundamental_Androi_Kotlin</string>
+    <string-array name="methodPayment">
+        <item>Bayar Tunai</item>
+        <item>Gopay</item>
+        <item>OVO</item>
+        <item>Shopepay</item>
+        <item>Transfer Bank</item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
