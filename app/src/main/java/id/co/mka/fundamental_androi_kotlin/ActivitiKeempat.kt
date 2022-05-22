@@ -13,6 +13,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.core.graphics.toColor
 import id.co.mka.fundamental_androi_kotlin.databinding.ActivityActivitiKeempatBinding
+import id.co.mka.fundamental_androi_kotlin.fragment.fragment_pertama
 
 class ActivitiKeempat : AppCompatActivity() {
 
@@ -24,6 +25,7 @@ class ActivitiKeempat : AppCompatActivity() {
         setContentView(bindingkeempat.root)
 
         with(bindingkeempat){
+
 
             // Memanggil Fungtion
             buttonDialog1.setOnClickListener {
@@ -41,6 +43,7 @@ class ActivitiKeempat : AppCompatActivity() {
             buttonDialog4.setOnClickListener {
 
             }
+
 
 
         }
@@ -113,4 +116,6 @@ class ActivitiKeempat : AppCompatActivity() {
         }
         return true
     }
+
+
 }
