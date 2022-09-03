@@ -6,7 +6,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import id.co.mka.fundamental_androi_kotlin.databinding.ActivityKetigaBinding
-import id.co.mka.fundamental_androi_kotlin.fragment.fragment_kedua
+import id.co.mka.fundamental_androi_kotlin.fragment.FragmentKedua
 import id.co.mka.fundamental_androi_kotlin.fragment.fragment_pertama
 
 class ActivityKetiga : AppCompatActivity() {
@@ -24,6 +24,7 @@ class ActivityKetiga : AppCompatActivity() {
 
             // Memanggil Fungsi Fragment
             callFragment()
+
             val ambilNama = intent.getStringExtra("EXTRA_NAME") // Context Name Harus Sama
             val ambilHobi = intent.getStringExtra("Extra Hobi")
             val hasil  = "Hy $ambilNama Hobi Kamu $ambilHobi ya?"
@@ -40,7 +41,7 @@ class ActivityKetiga : AppCompatActivity() {
             // Fungsi Button 2 Fragment
             btnFagment2.setOnClickListener {
                 supportFragmentManager.beginTransaction().apply {
-                    replace(R.id.container_fragment, fragment_kedua())
+                    replace(R.id.container_fragment, FragmentKedua())
                     addToBackStack(null)
                     commit()
                 }

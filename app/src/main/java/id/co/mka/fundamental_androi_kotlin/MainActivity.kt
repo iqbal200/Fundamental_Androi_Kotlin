@@ -2,14 +2,10 @@ package id.co.mka.fundamental_androi_kotlin
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
+import androidx.appcompat.app.AppCompatActivity
 import id.co.mka.fundamental_androi_kotlin.databinding.ActivityMainBinding
-import id.co.mka.fundamental_androi_kotlin.databinding.FragmentPertamaBinding
-import id.co.mka.fundamental_androi_kotlin.fragment.fragment_kedua
-import id.co.mka.fundamental_androi_kotlin.fragment.fragment_pertama
 
 class MainActivity : AppCompatActivity() {
     //
@@ -18,9 +14,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         inibinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(inibinding.root)
-
-
-
 
         with(inibinding){
 
@@ -31,7 +24,6 @@ class MainActivity : AppCompatActivity() {
                 val name = tvfNama.text.toString()
                 val umur = tvfUmur.text.toString().toInt()
                 val checked = RbAdult.isChecked
-
                 editor.apply {
                     putString("name", name)
                     putInt( "umur", umur)
